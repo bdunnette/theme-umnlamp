@@ -23,7 +23,8 @@
 
     <!-- Stylesheets -->
     <?php
-    queue_css_file('style');
+    queue_css_file('foundation');
+	//queue_css_file('style');
     queue_css_url('http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic');
     echo head_css();
 
@@ -41,6 +42,7 @@
     <!-- JavaScripts -->
     <?php 
     queue_js_file('vendor/modernizr');
+	queue_js_file('vendor/foundation.min');
     queue_js_file('vendor/selectivizr', 'javascripts', array('conditional' => '(gte IE 6)&(lte IE 8)'));
     queue_js_file('vendor/respond');
     queue_js_file('globals');
